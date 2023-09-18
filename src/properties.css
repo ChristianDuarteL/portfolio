@@ -4,7 +4,8 @@
     --blue-color: #5D80F9;
     --text-color-400: #999;
     --text-color-500: #777;
-    --link-color: #3e5abe;
+    --text-color-header: rgb(66, 101, 230);
+    --link-color: #5a77e0;
     --text-gradient: linear-gradient(270.17deg, var(--green-color) 14.82%, var(--blue-color) 53.57%);
 }
 
@@ -16,6 +17,7 @@
         --text-color-400: #777;
         --text-color-500: #aaa;
         --link-color: #7692dd;
+        --text-color-header: rgb(152, 175, 255);
         --text-gradient: linear-gradient(270.17deg, var(--green-color) 14.82%, var(--blue-color) 53.57%);
     }
 }

@@ -28,6 +28,7 @@ export class Wrapper extends LitElement {
             position: fixed;
             justify-content: center;
             width: 100%;
+            color: var(--text-color-header);
         }
 
         header .header-wrapper{
@@ -85,7 +86,7 @@ export class Wrapper extends LitElement {
     return html`
         <header>
             <div class="header-wrapper" style=${styleMap({justifyContent: this.header_flex})}>
-                <a style=${styleMap({display: this.logo_display, opacity: this.logo_opacity})} href="/">Christian Duarte</a>
+                <a href="#home" style=${styleMap({display: this.logo_display, opacity: this.logo_opacity})} href="/">Christian Duarte</a>
                 <nav style=${styleMap({flexGrow: this.navGrow})}>
                     <slot name="links"></slot>
                 </nav>
