@@ -4,8 +4,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: #00f;
-  background-color: #fff;
+  background-color: var(--bg-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -17,6 +16,7 @@
 a {
   font-weight: 500;
   text-decoration: inherit;
+  color: var(--link-color);
 }
 
 *{

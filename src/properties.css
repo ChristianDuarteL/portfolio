@@ -1,3 +1,21 @@
 :root{
-    --text-gradient: linear-gradient(270.17deg, #63D27B 14.82%, #5D80F9 53.57%);
+    --bg-color: #fff;
+    --green-color: #63D27B;
+    --blue-color: #5D80F9;
+    --text-color-400: #999;
+    --text-color-500: #777;
+    --link-color: #3e5abe;
+    --text-gradient: linear-gradient(270.17deg, var(--green-color) 14.82%, var(--blue-color) 53.57%);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    :root{
+        --bg-color: #191b20;
+        --green-color: #63D27B;
+        --blue-color: #5D80F9;
+        --text-color-400: #777;
+        --text-color-500: #aaa;
+        --link-color: #7692dd;
+        --text-gradient: linear-gradient(270.17deg, var(--green-color) 14.82%, var(--blue-color) 53.57%);
+    }
 }

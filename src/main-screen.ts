@@ -23,7 +23,7 @@ export class MainScreen extends LitElement {
       
       h1{
         font-size: 4em;
-        color: #999;
+        color: var(--text-color-400);
       }
 
       h1 em{
@@ -34,7 +34,7 @@ export class MainScreen extends LitElement {
       
       h2{
         font-size: 1.5em;
-        color: #888;
+        color: var(--text-color-500);
       }
     `
   ];

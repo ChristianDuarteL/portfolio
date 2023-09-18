@@ -19,7 +19,7 @@ export class Wrapper extends LitElement {
             padding: 0;
         }
 
-        a{
+        a, ::slotted(a) {
             text-decoration: inherit;
             color: inherit;
         }
@@ -39,8 +39,8 @@ export class Wrapper extends LitElement {
             justify-content: space-between;
         }
 
-        header a {
-            padding: 1em;
+        header ::slotted(a) {
+            padding: 1em!important;
         }
 
         nav{
@@ -76,7 +76,7 @@ export class Wrapper extends LitElement {
 
   on_scroll(a: ScrollData) {
     this.navGrow = Math.max(1 - a.relative_screen_y * 2, 0);
-    this.logo_opacity = clamp((a.relative_screen_y - .25) / .5, 0, 1);
+    this.logo_opacity = clamp((a.relative_screen_y - .25) / .25, 0, 1);
     this.logo_display = a.relative_screen_y > .25 ? 'inline-block' : 'none';
     this.header_flex = a.relative_screen_y > .25 ? 'space-between' : 'flex-end';
   }
@@ -87,9 +87,7 @@ export class Wrapper extends LitElement {
             <div class="header-wrapper" style=${styleMap({justifyContent: this.header_flex})}>
                 <a style=${styleMap({display: this.logo_display, opacity: this.logo_opacity})} href="/">Christian Duarte</a>
                 <nav style=${styleMap({flexGrow: this.navGrow})}>
-                    <a href="#home">Inicio</a>
-                    <a href="#about_me">Acerca de mi</a>
-                    <a href="#experience">Experiencia</a>
+                    <slot name="links"></slot>
                 </nav>
             </div>
         </header>

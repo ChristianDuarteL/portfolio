@@ -11,10 +11,13 @@ export class AboutMe extends LitElement {
     css`
         section{
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            flex-direction: row;
+            justify-content: space-between;
             align-items: center;
             min-height: 100vh;
+            width: 80%;
+            margin: auto;
+            max-width: 1180px;
         }
     `
   ];
