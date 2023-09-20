@@ -36,8 +36,15 @@ body {
 }
 
 .bio-img{
-  height: 60vh;
+  max-height: 60vh;
+  max-width: 100%;
   border-radius: .5em;
+}
+
+@media screen and (max-width: 910px){
+  .bio-img{
+    max-height: 40vh;
+  }
 }
 
 .bio-greeting{

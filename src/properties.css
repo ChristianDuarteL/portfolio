@@ -1,5 +1,7 @@
 :root{
     --bg-color: #fff;
+    --bg-rgb: 255, 255, 255;
+    --header-filter: blur(2px);
     --green-color: #63D27B;
     --blue-color: #5D80F9;
     --text-color-200: #ddd;
@@ -13,6 +15,7 @@
 @media screen and (prefers-color-scheme: dark) {
     :root{
         --bg-color: #191b20;
+        --bg-rgb: 25, 27, 31;
         --green-color: #63D27B;
         --blue-color: #5D80F9;
         --text-color-400: #777;

@@ -14,15 +14,26 @@ export class AboutMe extends LitElement {
             min-height: 100vh;
             width: 80%;
             margin: auto;
+			padding: 3em 0em;
+			box-sizing: border-box;
             max-width: 1180px;
+			gap: 2em;
         }
+		@media screen and (max-width: 910px){
+			section{
+				grid-template-columns: 1fr;
+			}
+			.first-section{
+				grid-row: 2;
+			}
+		}
     `
   ];
 
   render() {
     return html`
         <section>
-			<div>
+			<div class="first-section">
 				<slot></slot>
 			</div> 
 			<slot name="picture"></slot>
