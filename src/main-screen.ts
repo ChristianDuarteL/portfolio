@@ -15,6 +15,8 @@ export class MainScreen extends LitElement {
         align-items: center;
         text-align: center;
         min-height: 100vh;
+        max-width: 90%;
+        margin: auto;
       }
       
       *{
