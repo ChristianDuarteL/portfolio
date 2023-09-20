@@ -35,3 +35,12 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
+.bio-img{
+  height: 60vh;
+  border-radius: .5em;
+}
+
+.bio-greeting{
+  font-size: 2em;
+}

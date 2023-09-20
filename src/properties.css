@@ -2,8 +2,9 @@
     --bg-color: #fff;
     --green-color: #63D27B;
     --blue-color: #5D80F9;
-    --text-color-400: #999;
-    --text-color-500: #777;
+    --text-color-200: #ddd;
+    --text-color-400: #aaa;
+    --text-color-500: #888;
     --text-color-header: rgb(66, 101, 230);
     --link-color: #5a77e0;
     --text-gradient: linear-gradient(270.17deg, var(--green-color) 14.82%, var(--blue-color) 53.57%);

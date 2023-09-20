@@ -13,6 +13,7 @@ export class MainScreen extends LitElement {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
         min-height: 100vh;
       }
       
@@ -31,7 +32,7 @@ export class MainScreen extends LitElement {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;      
       }
-      
+
       h2{
         font-size: 1.5em;
         color: var(--text-color-500);
@@ -66,7 +67,7 @@ export class MainScreen extends LitElement {
   render() {
     return html`
       <main>
-        <h1 style=${styleMap({opacity: this.nameOpacity})}>Soy <em>Christian Duarte<em></h1>
+        <h1 style=${styleMap({opacity: this.nameOpacity})}>Soy <em>Christian Duarte</em></h1>
         <h2 style=${styleMap({opacity: this.subtitleOpacity})}>Estudiante de ingeniería de software</h2>
       </main>
     `
