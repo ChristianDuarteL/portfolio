@@ -19,7 +19,7 @@ a {
   color: var(--link-color);
 }
 
-*{
+body, h1, h2 {
   margin: 0;
   padding: 0;
 }
@@ -29,7 +29,6 @@ html{
 }
 
 body {
-  margin: 0;
   display: grid;
   place-items: stretch;
   min-width: 320px;
