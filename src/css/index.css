@@ -24,6 +24,10 @@ body, h1, h2 {
   padding: 0;
 }
 
+h2{
+  color: var(--link-color);
+}
+
 html{
   scroll-behavior: smooth;
 }

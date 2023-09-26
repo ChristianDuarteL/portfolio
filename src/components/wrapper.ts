@@ -1,8 +1,8 @@
 import { LitElement, css, html } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
-import { ScrollData, ScrollEventElement, ScrollWatcher } from './ScrollWatcher';
+import { ScrollData, ScrollEventElement, ScrollWatcher } from '../helpers/ScrollWatcher';
 import { styleMap } from 'lit/directives/style-map.js';
-import { clamp } from './math';
+import { clamp } from '../helpers/math';
 
 @customElement('cd-wrapper')
 export class Wrapper extends LitElement {

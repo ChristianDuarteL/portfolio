@@ -5,12 +5,14 @@
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Christian Duarte - SWE Student</title>
-    <link rel="stylesheet" href="./src/properties.css" />
-    <link rel="stylesheet" href="./src/index.css" />
-    <link rel="stylesheet" href="./src/fonts.css" />
-    <script type="module" src="/src/main-screen.ts"></script>
-    <script type="module" src="/src/about-me.ts"></script>
-    <script type="module" src="/src/wrapper.ts"></script>
+    <link rel="stylesheet" href="/src/css/properties.css" />
+    <link rel="stylesheet" href="/src/css/index.css" />
+    <link rel="stylesheet" href="/src/css/fonts.css" />
+    <script type="module" src="/src/components/main-screen.ts"></script>
+    <script type="module" src="/src/components/about-me.ts"></script>
+    <script type="module" src="/src/components/wrapper.ts"></script>
+    <script type="module" src="/src/components/technologies-wrapper.ts"></script>
+    <script type="module" src="/src/components/technology.ts"></script>
   </head>
   <body>
     <cd-wrapper>
@@ -25,6 +27,10 @@
         <p>Soy José Christian Duarte Ruiz. Actualmente estoy cursando la Licenciatura en Ingeniería en desarrollo de Software en la Universidad Autonoma de Baja California Sur. Descubrí la programacion hace 10 años y desde entonces ha sido una gran parte de mi vida.</p>
         <p>En octubre de 2022 participé en un pequeño concurso de programación por equipos organizado por mi universidad, siendo líder de dos estudiantes de ingeniería de software, juntos ganamos el primer lugar entre otros 12 equipos de estudiantes de la misma universidad de distintos años y licenciaturas.</p>
       </cd-about-me>
+      <cd-technologies-wrapper>
+        <h2 slot="title">Tecnologías que utilizo</h2>
+        <cd-technology tech="Lit" image="/img/technologies/lit.svg"></cd-technology>
+      </cd-technologies-wrapper>
     </cd-wrapper>
   </body>
 </html>
