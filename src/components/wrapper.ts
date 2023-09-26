@@ -29,7 +29,7 @@ export class Wrapper extends LitElement {
             justify-content: center;
             width: 100%;
             color: var(--text-color-header);
-            background-color: rgba(var(--bg-rgb), .5);
+            background-color: var(--header-bg);
             backdrop-filter: var(--header-filter);
         }
         

@@ -18,6 +18,7 @@
     <cd-wrapper>
       <a slot="links" href="#home">Inicio</a>
       <a slot="links" href="#about_me">Acerca de mi</a>
+      <a slot="links" href="#technologies">Tecnologías</a>
       <cd-main-screen id="home"></cd-main-screen>
       <cd-about-me id="about_me">
         <div slot="picture">
@@ -27,10 +28,28 @@
         <p>Soy José Christian Duarte Ruiz. Actualmente estoy cursando la Licenciatura en Ingeniería en desarrollo de Software en la Universidad Autonoma de Baja California Sur. Descubrí la programacion hace 10 años y desde entonces ha sido una gran parte de mi vida.</p>
         <p>En octubre de 2022 participé en un pequeño concurso de programación por equipos organizado por mi universidad, siendo líder de dos estudiantes de ingeniería de software, juntos ganamos el primer lugar entre otros 12 equipos de estudiantes de la misma universidad de distintos años y licenciaturas.</p>
       </cd-about-me>
-      <cd-technologies-wrapper>
-        <h2 slot="title">Tecnologías que utilizo</h2>
-        <cd-technology tech="Lit" image="/img/technologies/lit.svg"></cd-technology>
-      </cd-technologies-wrapper>
+      <section id="technologies">
+        <cd-technologies-wrapper>
+          <h2 slot="title">Tecnologías que utilizo</h2>
+          <cd-technology tech="Lit" image="/img/technologies/lit.svg"></cd-technology>
+          <cd-technology tech="React" image="/img/technologies/react.svg"></cd-technology>
+          <cd-technology tech="Laravel" image="/img/technologies/laravel.svg"></cd-technology>
+          <cd-technology tech="Spring Boot" image="/img/technologies/spring-boot.svg"></cd-technology>
+          <cd-technology tech="Node JS" image="/img/technologies/node.svg"></cd-technology>
+        </cd-technologies-wrapper>
+        <cd-technologies-wrapper>
+          <h2 slot="title">Lenguajes que manejo</h2>
+          <cd-technology tech="C/C++" image="/img/langs/cpp.svg"></cd-technology>
+          <cd-technology tech="Java" image="/img/langs/java.svg"></cd-technology>
+          <cd-technology tech="PHP" image="/img/langs/php.svg"></cd-technology>
+          <cd-technology tech="C#" image="/img/langs/csharp.png"></cd-technology>
+          <cd-technology tech="Python" image="/img/langs/python.svg"></cd-technology>
+          <cd-technology tech="TypeScript" image="/img/langs/ts.svg"></cd-technology>
+          <cd-technology tech="JavaScript" image="/img/langs/js.svg"></cd-technology>
+          <cd-technology tech="HTML" image="/img/langs/html.svg"></cd-technology>
+          <cd-technology tech="CSS" image="/img/langs/css.svg"></cd-technology>
+        </cd-technologies-wrapper>
+      </section>
     </cd-wrapper>
   </body>
 </html>

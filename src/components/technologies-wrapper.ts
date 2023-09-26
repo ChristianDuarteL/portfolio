@@ -12,17 +12,10 @@ export class TecnologiesWrapper extends LitElement {
 
     static styles = [
         css`
-            section{
+            :host{
                 display: flex;
                 align-items: center;
-                justify-content: center;
                 flex-direction: column;
-                min-height: 100vh;
-                width: 80%;
-                margin: auto;
-                padding: 3em 0em;
-                box-sizing: border-box;
-                max-width: 1180px;
                 gap: 2em;
             }
             .technologies{
@@ -37,12 +30,10 @@ export class TecnologiesWrapper extends LitElement {
 
     render() {
         return html`
-            <section>
-                <slot name="title"></slot>
-                <div class="technologies">
-                    <slot></slot>
-                </div>
-            </section>
+            <slot name="title"></slot>
+            <div class="technologies">
+                <slot></slot>
+            </div>
         `
     }
 }

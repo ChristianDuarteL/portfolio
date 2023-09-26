@@ -1,7 +1,8 @@
 :root{
     --bg-color: #fff;
     --bg-rgb: 255, 255, 255;
-    --header-filter: blur(2px);
+    --header-filter: blur(4px);
+    --header-bg: rgba(var(--bg-rgb), .8);
     --green-color: #63D27B;
     --blue-color: #5D80F9;
     --text-color-200: #ddd;
